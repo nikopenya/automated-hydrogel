@@ -44,7 +44,16 @@ Cuadernos de Jupyter para la curación de datos, validación metrológica y mode
 4. **Modelar:** Ejecuta los cuadernos `Analisis*.ipynb` para limpiar metrológicamente los datos de Hertz brutos, seguido de los pipelines `ML*.ipynb` para entrenar las arquitecturas predictivas y extraer la importancia de las variables.
 
 ---
+## Disponibilidad de Datos
 
+Los conjuntos de datos experimentales completos generados, curados y analizados durante este proyecto se encuentran disponibles en abierto en este repositorio. Estos archivos contienen los parámetros de diseño de las formulaciones (p. ej., concentraciones de precursores, tiempos sumergidos en agua) junto con sus correspondientes propiedades mecánicas (módulo de Young, error de ajuste matemático de Hertz) obtenidas de forma autónoma mediante la plataforma ASMI.
+
+* `Sistema_LAP.csv`: Conjunto de datos completo de alto rendimiento para el sistema base de hidrogeles PEGDA/LAP.
+* `Sistema_PVA.csv`: Conjunto de datos para las redes de polímeros semi-interpenetradas (semi-IPN) de PVA/PEGDA/LAP.
+* `Sistema_RF.csv`: Conjunto de datos para el sistema fotopolimerizable biocompatible de Tipo II PEGDA/TEOA/Riboflavina.
+
+> **Nota:** Estos *datasets* actúan como la entrada principal para los flujos de trabajo (*pipelines*) de Machine Learning y XAI detallados en la Fase 4.
+> 
 ## Requisitos e Instalación
 
 Para ejecutar localmente los scripts de diseño, control de hardware y machine learning, asegúrate de tener instalado el siguiente conjunto de librerías científicas:
