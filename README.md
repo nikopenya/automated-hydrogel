@@ -31,8 +31,8 @@ Un conjunto de scripts para gestionar el diagnóstico de hardware, el posicionam
 Cuadernos de Jupyter para la curación de datos, validación metrológica y modelado predictivo utilizando ensamblados basados en árboles (Random Forest, ExtraTrees, XGBoost) y Regresión por Procesos Gaussianos (GPR).
 
 * `Analisis*.ipynb` (`LAP`, `PVA`, `RF`): **Curación de Datos y EDA**. Aplica un estricto umbral que descarta errores relativos de ajuste ≤25 % para limpiar los datos brutos. Valida la estabilidad inter/intra-sesión del hardware y mapea el espacio composición-propiedad utilizando superficies interactivas 2D/3D de Plotly.
-* `ML_*_code_limpio_basico.ipynb`: **Modelos Predictivos Base**. Entrena los algoritmos utilizando variables operativas directas (concentraciones absolutas de precursores y tiempo sumergido en agua) como espacio de características principal y extrae los valores **SHAP (*SHapley Additive exPlanations*)** para traducir las predicciones del modelo en leyes físicas interpretables.
-* `ML_*_code_limpio.ipynb`: **Modelos Avanzados de XAI**. Implementa Ingeniería de Características (*Feature Engineering*, p. ej., ratios estequiométricos) y extrae los valores **SHAP** para desglosar la "caja negra" del algoritmo en principios físicos termodinámicos.
+* `ML_LAP_code_limpio_basico.ipynb`, `ML_RF_code_limpio_basico.ipynb`, `ML_PVA_code_limpio_basico.ipynb`: **Modelos Predictivos Base**. Entrena los algoritmos utilizando variables operativas directas (concentraciones absolutas de precursores y tiempo sumergido en agua) como espacio de características principal y extrae los valores **SHAP (*SHapley Additive exPlanations*)** para traducir las predicciones del modelo en leyes físicas interpretables.
+* `ML_LAP_code_limpio.ipynb`, `ML_RF_code_limpio.ipynb`, `ML_PVA_code_limpio.ipynb`: **Modelos Avanzados de XAI**. Implementa Ingeniería de Características (*Feature Engineering*, p. ej., ratios estequiométricos) y extrae los valores **SHAP** para desglosar la "caja negra" del algoritmo en principios físicos termodinámicos.
 
 ---
 
@@ -48,13 +48,6 @@ Cuadernos de Jupyter para la curación de datos, validación metrológica y mode
 ## Requisitos e Instalación
 
 Para ejecutar localmente los scripts de diseño, control de hardware y machine learning, asegúrate de tener instalado el siguiente conjunto de librerías científicas:
-
-```bash
-pip install numpy pandas scipy matplotlib openpyxl plotly pyserial scikit-learn xgboost shap
-
-## 📦 Requirements & Installation
-
-To run the design, hardware control, and machine learning scripts locally, ensure you have the required scientific computing stack installed:
 
 ```bash
 pip install numpy pandas scipy matplotlib openpyxl plotly pyserial scikit-learn xgboost shap
