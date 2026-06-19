@@ -18,7 +18,7 @@ Algoritmos diseñados para mapear espacios composicionales multicomponente utili
 ### Fase 2: Síntesis Robótica Automatizada
 Scripts de la **API v2.21 de Opentrons Flex** programados para comandar el robot manipulador de líquidos y realizar una dosificación, mezcla y formulación precisas en microplacas estándar SBS de 96 pocillos.
 * `LAPoptimo_1.py`, `LAPoptimo_2.py`, `LAPoptimo_3.py`: Protocolos de síntesis por lotes (PEGDA/LAP) que dividen 32 formulaciones únicas (con 3 réplicas cada una) a lo largo de 3 microplacas.
-* `PVAoptimo_1.py`, `PVAoptimo_2.py`: Protocolos de manejo de líquidos de alta viscosidad diseñados a medida y optimizados para matrices que contienen PVA.
+* `PVAoptimo_1.py`, `PVAoptimo_2.py`, `PVAoptimo_3.py`: Protocolos de manejo de líquidos de alta viscosidad diseñados a medida y optimizados para matrices que contienen PVA.
 * `RFoptimo_1.py`, `RFoptimo_2.py`, `RFoptimo_3.py`: Protocolos de formulación para el sistema PEGDA/RF/TEOA, altamente dependiente de la cinética.
 
 ### Fase 3: Caracterización de Alto Rendimiento y Control de Hardware
